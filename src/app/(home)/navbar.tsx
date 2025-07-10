@@ -90,8 +90,7 @@ export const Navbar = () => {
             </Button>
             <Button
                 asChild
-                className="border-l border-t-0 border-b-0 border-r-0 rounded-none px-12 h-full bg-black text-white hover:bg-pink-400 
-                hover:text-black transition-colors text-lg"
+                className="border-l border-t-0 border-b-0 border-r-0 rounded-none px-12 h-full bg-black text-white hover:bg-pink-400 hover:text-black transition-colors text-lg"
             >
                 <Link href="/startselling"> Start Selling </Link>
             </Button>
