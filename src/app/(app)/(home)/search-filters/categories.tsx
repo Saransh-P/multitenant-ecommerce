@@ -78,7 +78,7 @@ export const Categories = ({data}: Props) => {
             {/* Hidden div to measure all items */}
             <div 
                 ref={measureRef} 
-                className="absolute opacty-0 pointer-events-none flex"
+                className="absolute opacity-0 pointer-events-none flex"
                 style={{ position: "fixed", top: -9999, left: -9999 }}
             >
                 {data.map ((category) => (

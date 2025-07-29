@@ -20,7 +20,7 @@ export const CategoriesSidebar = ({open, onOpenChange, data}: Props) => {
     const [selectedCategory, setSelectedCategory] = useState<CustomCategory | null>(null);
 
     // if we have parent categories, show those, or else show root categories
-    const currenttCategory = parentCategories ?? data ?? [];
+    const currentCategory = parentCategories ?? data ?? [];
 
     const handleOpenChange = (open: boolean) => {
         setParentCategories(null);
@@ -85,7 +85,7 @@ export const CategoriesSidebar = ({open, onOpenChange, data}: Props) => {
                         </button>
                     )}
 
-                    {currenttCategory.map((category) => (
+                    {currentCategory.map((category) => (
                         <button
                             key={category.slug}
                             className="w-full text-left p-4 hover:bg-black hover:text-white flex justify-between items-center text-base font-medium cursor-pointer"
